@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body {
+  font-family: 'Anton', sans-serif;
+  background-color: rgb(255, 255, 255);
+  border-color: black;
+}
+
+body,
+h1,
+h2,
+h3,
+h5,
+h6,
+ul {
+  text-align: center;
+  color: black;
+}
+
+header {
+  align-items: center;
+  background-color: rgb(184, 111, 252);
+}
+
+.slider {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background: url(slider1.jpg);
+  width: 87.5rem; /* Converted from 1400px */
+  height: 44.375rem; /* Converted from 710px */
+  margin: 6.25rem auto; /* Converted from 100px */
+  background-repeat: no-repeat;
+  animation: slide 20s infinite;
+}
+
+@keyframes slide {
+  25% {
+    background: url(slider3.jpg);
+  }
+  50% {
+    background: url(slider7.jpg);
+  }
+  75% {
+    background: url(slider4.jpg);
+  }
+  100% {
+    background: url(slider5.jpg);
+  }
+}
+
+.slider22 {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background: url(slider12.jpg);
+  width: 87.5rem; /* Converted from 1400px */
+  height: 44.375rem; /* Converted from 710px */
+  margin: 6.25rem auto; /* Converted from 100px */
+  background-repeat: no-repeat;
+  animation: slide2 20s infinite;
+}
+
+@keyframes slide2 {
+  25% {
+    background: url(slider8.jpg);
+  }
+  50% {
+    background: url(slider9.jpg);
+  }
+  75% {
+    background: url(slider11.jpg);
+  }
+  100% {
+    background: url(slider10.jpg);
+  }
+}
+
+button {
+  font-size: 2rem; /* Converted from x-large */
+  color: blue;
+  border-color: #f00;
+}
+
+button:hover {
+  color: rgb(0, 0, 134);
+  text-decoration: underline;
+}
+
+p {
+  font-size: 2rem; /* Converted from x-large */
+  font-family: 'Anton', sans-serif;
+  font-family: 'Secular One', sans-serif;
+}
+
+li {
+  font-family: 'Anton', sans-serif;
+  font-family: 'Righteous', cursive;
+  font-family: 'Secular One', sans-serif;
+}
+
+li,
+p {
+  text-align: left;
+}
+
+h3,
+h4 {
+  text-align: left;
+}
+
+h3 {
+  text-decoration: underline;
+  color: rgb(7, 19, 128);
+}
+
+h6 {
+  display: none;
+}
+
+h4:hover nav h6 {
+  display: block;
+  font-size: small;
+}
+
+.dropdown:hover .dropdown-content1 {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content1 {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content1 {
+  display: block;
+}
+
+#login h3 {
+  color: #fff;
+  font-size: 2rem; /* Converted from x-large */
+  margin-top: -5rem; /* Converted from -80px */
+  margin-left: 100rem; /* Converted from 1600px */
+  cursor: pointer;
+}
+
+#signup h3 {
+  color: #fff;
+  font-size: 2rem; /* Converted from x-large */
+  margin-top: -4.83rem; /* Converted from -60px */
+  margin-left: 106.25rem; /* Converted from 1700px */
+}
+
+a {
+  color: rgb(219, 31, 203);
+}
+
+a:hover {
+  color: #f00;
+  text-decoration: underline;
+  display: block;
+}
+
+#logo {
+  font-size: 1.5rem; /* Converted from 24px */
+  font-weight: bold;
+  color: yellow;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 0.625rem; /* Converted from 10px */
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+main {
+  padding: 3.125rem; /* Converted from 50px */
+}
+
+h2 {
+  color: red;
+  margin-bottom: 1.25rem; /* Converted from 20px */
+  text-decoration: underline;
+}
+
+ul {
+  margin-left: 1.875rem; /* Converted from 30px */
+}
+
+section {
+  margin-bottom: 3.125rem; /* Converted from 50px */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+footer {
+  background-color: white;
+  color: #fff;
+  text-align: center;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 0.625rem; /* Converted from 10px */
+  right: 0.625rem; /* Converted from 10px */
+  display: none;
+  cursor: pointer;
+}
+
+#play-music {
+  margin-top: 7.5rem; /* Converted from 120px */
+}
+
+#play-music h3 {
+  text-align: center;
+  color: red;
+}
+
+#ourgoal {
+  margin-top: -6.875rem; /* Converted from -110px */
+}
+
+#ourgoal h3 {
+  text-align: center;
+  margin-top: 9.375rem; /* Converted from 150px */
+  font-size: 2rem; /* Converted from x-large */
+  color: orangered;
+}
+
+#ourgoal1 h3 {
+  text-align: center;
+  font-size: 1rem; /* Converted from medium */
+  color: rgb(0, 49, 140);
+  margin-top: -0.9375rem; /* Converted from -15px */
+  font-family: 'Anton', sans-serif;
+  font-family: 'Righteous', cursive;
+  font-family: 'Russo One', sans-serif;
+  font-family: 'Secular One', sans-serif;
+}
+
+#video-ev1 {
+  align-items: center;
+  background-color: black;
+}
+
+#video-ev6 {
+  align-items: center;
+  background-color: black;
+}
+
+#video-ev4 {
+  align-items: center;
+  background-color: black;
+}
+
+#video-ev5 {
+  align-items: center;
+  background-color: black;
+}
+
+h4 {
+  color: rgb(255, 0, 200);
+  text-decoration: underline;
+}
+
+#quiz-html h3 {
+  margin-left: 3.75rem; /* Converted from 60px */
+  margin-top: -13.75rem; /* Converted from -220px */
+  color: aqua;
+}
+
+#quiz2-html h3 {
+  margin-left: 3.75rem; /* Converted from 60px */
+  color: aqua;
+}
+
+#buytata h3 {
+  margin-left: 3.75rem; /* Converted from 60px */
+  color: aqua;
+}
+
+#ContactUs {
+  background-color: black;
+  color: black;
+  padding: 1.25rem; /* Converted from 20px */
+  margin-top: 3.125rem; /* Converted from 50px */
+  border-radius: 0.625rem; /* Converted from 10px */
+}
+
+#ContactUs h2 {
+  color: red;
+  text-align: center;
+  margin-bottom: 1.25rem; /* Converted from 20px */
+}
+
+#ContactUs form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ContactUs label {
+  display: block;
+  color: greenyellow;
+  font-size: 1rem; /* Converted from 16px */
+  font-weight: bold;
+  margin-top: 0.625rem; /* Converted from 10px */
+}
+
+#ContactUs input,
+#ContactUs textarea {
+  padding: 0.625rem; /* Converted from 10px */
+  margin-top: 0.3125rem; /* Converted from 5px */
+  margin-bottom: 0.625rem; /* Converted from 10px */
+  border-inline-color: blue;
+  border-radius: 0.3125rem; /* Converted from 5px */
+  width: 100%;
+  font-size: 1rem; /* Converted from 16px */
+}
+
+#ContactUs button[type="submit"] {
+  background-color: red;
+  color: white;
+  padding: 0.625rem 1.25rem; /* Converted from 10px 20px */
+  border: none;
+  border-radius: 0.3125rem; /* Converted from 5px */
+  font-size: 1rem; /* Converted from 16px */
+  cursor: pointer;
+  margin-top: 0.625rem; /* Converted from 10px */
+}
+
+#ContactUs button[type="submit"]:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-us h3 {
+  width: 45%;
+  text-align: center;
+}
+
+#about-us p {
+  text-align: center;
+}
+
+.rating {
+  width: 31.25rem; /* Converted from 500px */
+  margin: 0 auto;
+}
+
+.rating1 {
+  margin-bottom: 0.625rem; /* Converted from 10px */
+}
+
+.rating1 label {
+  display: block;
+  color: blue;
+  font-size: 1rem; /* Converted from 16px */
+  font-weight: bold;
+  margin-top: 0.625rem; /* Converted from 10px */
+}
+
+.submit {
+  text-align: center;
+  border: #f00;
+  font-size: 1.25rem; /* Converted from 20px */
+}
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+    /* Adjust CSS properties for mobile */
+    /* For example, change the width and margin of elements */
+    .slider,
+    .slider22 {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+  
+    /* Other responsive adjustments */
+    /* ... */
+  }
+  
