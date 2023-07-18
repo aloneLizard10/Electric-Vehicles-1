@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Page</title>
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+        *{
+      margin:0;
+      padding : 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #23242a;  
+        min-height: 100vh;
+       }
+       .box{
+        position: relative;
+        width:390px;
+        height: 490px;
+        background: #1c1c1c;
+        border-radius: 8px;
+        overflow: hidden;
+       }
+       .box::before{
+        content:'';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width:390px;
+        height: 490px;
+        background: linear-gradient(30deg, transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+        z-index: 1;
+       }
+       .box::after{
+      content:'';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width:390px;
+      height: 490px;
+      background: linear-gradient(30deg, transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+      transform-origin: bottom right;
+      animation: animate 6s linear infinite; 
+      animation-delay:-3s;
+      z-index: 1;
+       }
+       @keyframes animate
+    {
+      0%{
+        transform: rorate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+    }
+      .boxLine{
+        position: relative;
+        top: 0;
+        inset: 0;
+      }
+      .boxLine::before{
+        content:'';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width:390px;
+      height: 490px;
+      background: linear-gradient(30deg, transparent,transparent,#ff2770,#ff2770,#ff2770);
+      transform-origin: bottom right;
+      animation: animate 6s linear infinite; 
+      animation-delay:-1.5s;
+      z-index: 1;
+      }
+      .boxLine::after{
+        content:'';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width:390px;
+      height: 490px;
+      background: linear-gradient(30deg, transparent,transparent,#ff2770,#ff2770,#ff2770);
+      transform-origin: bottom right;
+      animation: animate 6s linear infinite; 
+      animation-delay: -4.5s; 
+      z-index: 1 ;
+      }
+      form{
+          position: absolute;
+          inset: 2px;
+          border-radius: 8px;
+          background: #28292d;
+          z-index: 2;
+          padding: 30px 30px;
+          display: flex;
+          flex-direction: column;
+        }
+        h2{
+         color: aqua;
+         font-size: 35px;
+         font-weight: 500;
+         text-align: center;
+        }
+
+        .inputBox{
+         position: relative;
+         width: 300px;
+         margin-top: 35px;
+        }
+        .inputBox input{
+         position:relative;
+         width:100%;
+         padding:20px 10px 10px;
+         background:transparent;
+         border:none;
+         outline:none;
+         color: #23242a;
+         font-size: 1em;
+         letter-spacing: 0.05em;
+         z-index: 10;
+         transition: 0.5s;
+        }
+        .inputBox span{
+  position:absolute;
+  left: 0;
+  padding:20px 10px 10px;
+  color: #8f8f8f;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+  color: aqua;
+  transform: translateX(-10px) translateY(-30px);
+  font-size: 0.75em;
+}
+.inputBox i{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #45f3ff;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+  overflow: hidden;
+}
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i
+{
+  height: 44px;
+}
+.rBtn{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.lbl{
+  font-size: 20px;
+  color: #8f8f8f;
+}
+.radio-wrapper{
+  margin: 20px;
+}
+input[type="radio"]{
+  opacity: 0;
+}
+input[type="radio"] + label{
+  position: relative;
+  color: #8f8f8f;
+  cursor: pointer;
+}
+input[type="radio"] + label::before{
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 18px;
+  left: -24px;
+  top: 0;
+  border: 1px solid #6e6e6e;
+  border-radius: 50%;
+}
+input[type="radio"] + label::after{
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  left: -20px;
+  top: 4px;
+  border-radius: 50%;
+}
+input[type="radio"]:focus + label::before{
+  box-shadow: 0 0 0 2px rgba(69,243,255,0.7);
+}
+input[type="radio"]:checked + label::after{
+  background: #45f3ff;
+}
+input[type="submit"]
+{
+  font-size: 0.9em;
+  border: none;
+  outline: none;
+  background: aqua;
+  padding: 11px 25px;
+  margin-top: 10px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100px;
+}
+input[type="submit"]:active
+{
+  background: linear-gradient(90deg,#45f3ff,#d9138a);
+  opacity: 0.8;
+}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <span class="boxLine"></span>
+    <form action="">
+      <h2>Sign Up</h2>
+      <div class="inputBox">
+        <input type="text" required>
+        <span>Username</span>
+        <i></i>
+      </div>
+      <div class="inputBox">
+        <input type="password" required>
+        <span>Enter Password</span>
+        <i></i>
+      </div>
+      <div class="inputBox">
+        <input type="email" required>
+        <span>Email Address</span>
+        <i></i>
+      </div>
+      <div class="rBtn">
+        <label class="lbl">Gender :</label>
+        <div class="radio-wrapper">
+          <input type="radio" name="gender" id="male" value="male" checked>
+          <label for="male">Male</label>
+        </div>
+        <div class="radio-wrapper">
+          <input type="radio" name="gender" id="female" value="female" checked>
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <input type="submit" value="Sign Up">
+      
+    </form>
+  </div>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      
+      // Get form values
+      const firstName = document.getElementById('first-name').value;
+      const middleName = document.getElementById('middle-name').value;
+      const lastName = document.getElementById('last-name').value;
+      const gender = document.getElementById('gender').value;
+      const country = document.getElementById('country').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirm-password').value;
+
+      // Display entered data in the console
+      console.log('First Name:', firstName);
+      console.log('Middle Name:', middleName);
+      console.log('Last Name:', lastName);
+      console.log('Gender:', gender);
+      console.log('Country:', country);
+      console.log('Password:', password);
+      console.log('Confirm Password:', confirmPassword);
+
+      // Clear form inputs
+      document.getElementById('signup-form').reset();
+    }
+
+    function handleSocialLogin(provider) {
+      console.log(`Sign up with ${provider} clicked!`);
+    }
+    function handleSocialLogin(provider) {
+    if (provider === 'google') {
+      // Handle Google sign-up option
+      // Implement the logic to authenticate the user using the Google Sign-In API
+      // Once the user is authenticated, you can send the necessary data to your server
+
+      // Example:
+      // Open a new window for Google authentication
+      window.open('https://accounts.google.com/login', '_blank');
+    } else if (provider === 'twitter') {
+      // Handle Twitter sign-up option
+      // Implement the logic to authenticate the user using the Twitter API
+      // Once the user is authenticated, you can send the necessary data to your server
+
+      // Example:
+      // Open a new window for Twitter authentication
+      window.open('https://twitter.com/login', '_blank');
+    }
+  }
+  </script>
+</body>
+</html>

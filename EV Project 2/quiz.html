@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Game</title>
+  <link rel="icon" href="/quiz2.jpg" sizes="152x152" type="image/jpg">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quiz Game</h1>
+      <p id="question"></p>
+      <div id="options">
+        <button onclick="checkAnswer(this)" class="option"></button>
+        <button onclick="checkAnswer(this)" class="option"></button>
+        <button onclick="checkAnswer(this)" class="option"></button>
+        <button onclick="checkAnswer(this)" class="option"></button>
+      </div>
+      <button id="next" onclick="nextQuestion()">Next Question</button>
+      <p id="score"></p>
+    </div>
+    <script src="quiz.js"></script>
+    <audio src="quiz.mp3" autoplay loop></audio>
+    <h3>If you don't hear music while playing see whether your browser setting is on or not</h3>
+  </body>
+</html>
